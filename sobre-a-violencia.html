@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Viva Ela | Sobre a Violência Contra a Mulher</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Anton&family=Open+Sans:ital,wght@0,400;0,600;0,700;1,400;1,600;1,700&display=swap" rel="stylesheet">
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<style>
+  blockquote::before,
+  blockquote::after {
+    content: url(./imgs/citacao.svg);
+    display: block;
+    position: absolute;
+  }
+
+  blockquote::before {
+    rotate: 180deg;
+    top: -25px;
+    left: 5px;
+  }
+
+  blockquote::after {
+    bottom: -25px;
+    right: 75px;
+  }
+</style>
+
+<body class="bg-gray-50" style="font-family: 'Open Sans', sans-serif;">
+  <header class="header-bg">
+    <div class="header mx-auto my-0 flex max-w-6xl flex-wrap items-center justify-between py-10">
+      <a class="logo text-5xl font-bold" style="color: #540030" href="./index.html">Viva Ela</a>
+      <nav>
+        <ul class="menu flex gap-3 text-lg font-semibold" style="color: #540030">
+          <li class="flex items-center p-2 gap-1 rounded-md cursor-pointer hover:bg-[#ffe0d9]">
+            <a href="">Quem Somos</a>
+            <span><img class="mt-1" src="./imgs/menu-nav-aberto.svg" alt=""></span>
+          </li>
+          <li class="flex items-center p-2 gap-1 rounded-md cursor-pointer hover:bg-[#ffe0d9]">
+            <a class="" href="">Informativos</a>
+            <span><img class="mt-1" src="./imgs/menu-nav-aberto.svg" alt=""></span>
+          </li>
+          <li class="flex items-center p-2 gap-1 rounded-md cursor-pointer hover:bg-[#ffe0d9]">
+            <a class="" href="./tipos-violencia.html">Tipos de Violência</a>
+            <span><img class="mt-1" src="./imgs/menu-nav-aberto.svg" alt=""></span>
+          </li>
+          <li class="flex items-center p-2 gap-1 rounded-md cursor-pointer hover:bg-[#ffe0d9]">
+            <a class="" href="">Buscar Ajuda</a>
+            <span><img class="mt-1" src="./imgs/menu-nav-aberto.svg" alt=""></span>
+          </li>
+          <li class="flex items-center p-2 gap-1 rounded-md cursor-pointer hover:bg-[#ffe0d9]">
+            <a class="" href="./contato.html">Contato</a>
+            <span><img class="mt-1" src="./imgs/menu-nav-aberto.svg" alt=""></span>
+          </li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section id="introducao-sobre-a-violencia" class="introducao-sobre-a-violencia relative w-full mb-24">
+      <img class="w-full object-cover h-[550px] " src="./imgs/banner-sobre-a-violencia.jpg" alt="">
+      <div class="info-introducao-sobre-a-violencia absolute text-center inset-0 flex flex-col items-center justify-center" style="background-color: rgba(47, 2, 79, 0.8)">
+        <h1 class="text-rose-200 uppercase font-bold text-8xl max-w-5xl tracking-wider leading-tight mb-2" style="font-family: 'Anton', sans-serif; ">O que é a <span class="text-[#FF654B]">violência contra a mulher</span>?</h1>
+        <p class="text-gray-50 text-2xl max-w-2xl">Lorem ipsum dolor sit amet consectetur. Sem felis odio diam aliquam nullam ac diam. Venenatis vulputate. Aliquam in hendrerit urna. Pellentesque sit amet sapien fringilla</p>
+      </div>
+    </section>
+
+    <section id="infos-sobre-a-violencia" class="infos-sobre-a-violencia max-w-6xl my-0 mx-auto mb-24 flex items-center justify-between">
+      <div class="texto-sobre-a-violencia max-w-xl">
+        <p class="text-gray-900 text-lg mb-5">A violência contra a mulher é uma violação dos direitos humanos que se manifesta de <a href="" class="text-[#8C0351] underline font-bold">diversas formas</a> , afetando mulheres de todas as idades, classes sociais e origens.</p>
+
+        <p class="text-gray-900 text-lg mb-5">De acordo com a <a href="./sobre-a-lei.html" class="text-[#8C0351] underline font-bold">Lei Maria da Penha</a> (Lei nº 11.340/2006), violência contra a mulher é "qualquer ação ou omissão baseada no gênero que cause morte, lesão, sofrimento físico, sexual ou psicológico e dano moral ou patrimonial."</p>
+
+        <p class="text-gray-900 text-lg mb-5">As consequências desse tipo de violência são profundas: provocam traumas emocionais, danos à saúde física, dificuldades econômicas, exclusão social e impactos negativos também sobre os filhos e familiares. Além disso, perpetuam desigualdades de gênero e limitam o pleno exercício da cidadania das mulheres.</p>
+
+        <p class="text-gray-900 text-lg">Falar sobre esse assunto é essencial para romper o silêncio, promover a conscientização e garantir que mais mulheres tenham acesso à proteção, justiça e dignidade.</p>
+      </div>
+      <div class="quote text-[#8C0351] flex flex-col items-end font-bold max-w-sm">
+        <blockquote class="text-4xl text-center max-w-sm italic relative mb-14">
+          <p>A vida começa <br> quando a violência acaba</p>
+        </blockquote>
+        <span class="text-lg"> — Maria da Penha</span>
+      </div>
+    </section>
+
+    <section id="dados-violencia" class="dados-violencia-bg mb-24 bg-gradient-to-b from-[#FFE0D9] to-[#FFF0F6]/70">
+      <div class="dados-violencia max-w-6xl my-0 mx-auto pt-24 pb-24 grid grid-cols-3 grid-rows-[(9, auto)] gap-8">
+        <div class=" bg-[#834BA7] rounded-md p-8 row-start-1 row-end-2">
+          <h3 class="text-4xl text-[#FFE0D9] leading-snug tracking-wider mb-2" style="font-family: 'Anton', sans-serif;">1 em cada 3</h3>
+          <p class="text-gray-50 text-lg max-w-lg">mulheres no mundo ja foi espancada ou violentada sexualmente.</p>
+        </div>
+        <div class="bg-[#673A8E] rounded-md p-8 row-start-1 row-end-4">
+          <h3 class="text-4xl text-[#FFE0D9] max-w-64 leading-snug tracking-wider mb-2" style="font-family: 'Anton', sans-serif;">822 mil casos de estupro</h3>
+          <p class="text-gray-50 text-lg max-w-lg mb-5">ocorrem no Brasil a cada ano, sendo 2 por minuto</p>
+          <p class="text-gray-50 text-lg max-w-lg">*de acordo com o IPEA</p>
+        </div>
+        <div class="bg-[#925EAE] rounded-md p-8 row-start-1 row-end-3">
+          <p class="text-gray-50 text-lg max-w-lg mb-5">A maior quantidade de casos de estupro ocorre entre as jovens, e as principais vítimas têm 13 anos de idade.</p>
+          <p class="text-gray-50 text-lg max-w-lg">*de acordo com o Sinan, do Ministério da Saúde,</p>
+        </div>
+        <div class="bg-[#935FAE] rounded-md p-8 row-start-2 row-end-6">
+          <p class="text-gray-50 text-lg max-w-lg mb-5">Estupros registrados no RN crescem 30% em 1 ano, aponta Anuário da Violência</p>
+          <p class="text-gray-50 text-lg max-w-lg mb-5">Segundo o relatório, entre janeiro e dezembro do ano passado, ocorreram 1.242 estupros no estado, 288 casos a mais que nos 12 meses anteriores.</p>
+          <p class="text-gray-50 text-lg max-w-lg">Saiba mais clicando <a href="" class="text-[#FFE0D9] font-bold underline">aqui</a></p>
+        </div>
+        <div class="bg-[#925EAD] rounded-md p-8 row-start-4 row-end-5">
+          <h3 class="text-4xl text-[#FFE0D9] leading-snug tracking-wider mb-2" style="font-family: 'Anton', sans-serif;">A cada 15 segundos,</h3>
+          <p class="text-gray-50 text-lg max-w-lg">uma mulher é espancada no Brasil.</p>
+        </div>
+        <div class="bg-[#673A8D] rounded-md p-8  row-start-3 row-end-6">
+          <h3 class="text-4xl text-[#FFE0D9] max-w-64 leading-snug tracking-wider mb-2" style="font-family: 'Anton', sans-serif;">443 mulheres estupradas no RN</h3>
+          <p class="text-gray-50 text-lg max-w-lg">somente no ano de 2023, sendo 57 delas em Parnamirim</p>
+        </div>
+        <div class="bg-[#67398D] rounded-md p-8 row-start-6 row-end-8">
+          <p class="text-gray-50 text-lg max-w-lg">Mulheres trans são mais sujeitas a sofrer violência que mulheres cisgênero e mulheres indígenas, pretas e pardas sofrem mais violência do que mulheres brancas.</p>
+        </div>
+        <div class="bg-[#663A8D] rounded-md p-8 row-start-5 row-end-8">
+          <h3 class="text-4xl text-[#FFE0D9] leading-snug tracking-wider mb-2" style="font-family: 'Anton', sans-serif;">70%</h3>
+          <p class="text-gray-50 text-lg max-w-lg">dos três bilhões de pessoas vivendo em extrema pobreza no mundo são mulheres, ressaltando assim o processo de feminização da pobreza.</p>
+        </div>
+        <div class="bg-[#925EAD] rounded-md p-8 row-start-6 row-end-8">
+          <p class="text-gray-50 text-lg max-w-lg">Familiares, parceiros e ex-parceiros, amigos e conhecidos são os principais agressores, tanto dos casos de violência física como de violência sexual.</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="outras-normativas" class="outras-normativas max-w-6xl my-0 mx-auto mb-24">
+      <h2 class="uppercase text-5xl tracking-wider leading-snug text-center mb-14" style="color: #540030; opacity: 80%; font-family: 'Anton', sans-serif;">Outras normativas e políticas públicas de enfrentamento</h2>
+      <p class="text-gray-900 text-lg mb-10">Além da <a href="./sobre-a-lei.html" class="text-[#8C0351] underline font-bold">Lei Maria da Penha</a>, o Brasil conta com outras políticas e normativas que fortalecem o enfrentamento à violência contra a mulher:</p>
+      <div class="flex bg-[#FFE0D9] rounded-md py-14 px-14 gap-14">
+        <div class="info-normativas flex flex-1 gap-5">
+          <span class="bg-[#540030] w-5"></span>
+          <div class="normativas-texto flex flex-col">
+            <h3 class="text-[#540030] text-lg font-bold max-w-60 mb-5">Política Nacional de Atenção Integral à Saúde das Mulheres</h3>
+            <p class="text-gray-900 text-base mb-8">É um conjunto de diretrizes e objetivos que busca oferecer cuidados completos para a saúde das mulheres, promovendo a autonomia delas. </p>
+            <div class="flex gap-1 rounded-md py-2 px-4 bg-[#8C0351] self-start">
+              <a class="text-base font-bold uppercase tracking-wider text-rose-100" href="">Conheça</a>
+              <img src=" ./imgs/seta-botao.svg" alt="">
+            </div>
+          </div>
+        </div>
+        <div class="info-normativas flex flex-1 gap-5">
+          <span class="bg-[#540030] w-5"></span>
+          <div class="normativas-texto flex flex-col">
+            <h3 class="text-[#540030] text-lg font-bold mb-5">Norma Técnica para a Atenção Humanizada às Pessoas em Situação de Violência Sexual</h3>
+            <p class="text-gray-900 text-base mb-8">São diretrizes para o atendimento acolhedor e sigiloso às vítimas, com acesso à anticoncepção de emergência, prevenção de ISTs e apoio psicológico.</p>
+            <div class="flex gap-1 rounded-md py-2 px-4 bg-[#8C0351] self-start">
+              <a class="text-base font-bold uppercase tracking-wider text-rose-100" href="">Conheça</a>
+              <img src=" ./imgs/seta-botao.svg" alt="">
+            </div>
+          </div>
+        </div>
+        <div class="info-normativas flex flex-1 gap-5">
+          <span class="bg-[#540030] w-3"></span>
+          <div class="normativas-texto flex flex-col">
+            <h3 class="text-[#540030] text-lg font-bold mb-5">Norma técnica de atendimento à pessoa vítima de Violência no Rio Grande do Norte</h3>
+            <p class="text-gray-900 text-base max-w-64 mb-8">Orienta o atendimento humanizado e sigiloso às vítimas de violência no RN, com escuta qualificada e encaminhamento à rede de apoio.</p>
+            <div class="flex gap-1 rounded-md py-2 px-4 bg-[#8C0351] self-start">
+              <a class="text-base font-bold uppercase tracking-wider text-rose-100" href="">Conheça</a>
+              <img src=" ./imgs/seta-botao.svg" alt="">
+            </div>
+          </div>
+        </div>
+      </div>
+  </main>
+
+  <section class="disque-180 max-w-6xl mb-24 my-0 mx-auto flex items-center">
+    <div class="disque-180-imagem flex-1">
+      <img class="rounded-md" src="./imgs/disque-180.png" alt="Ícone e número de telefone do Disque 180">
+    </div>
+    <div class="disque-180-infos flex-1">
+      <p class="text-gray-900 text-lg mb-3">O Ligue 180 é um serviço de utilidade pública essencial para o enfrentamento à violência contra a mulher. Ele recebe denúncias de violações contra as mulheres, orienta mulheres em situação de violência, além de fornecer informações sobre os direitos da mulher.</p>
+      <p class="text-gray-900 text-lg mb-5">Para mais informações sobre onde buscar ajuda, clique <a href="" class="text-[#8C0351] font-bold underline">aqui</a>.</p>
+      <p class="font-bold text-lg" style="color: #2F024F">Violência contra a mulher é crime.</p>
+      <p class="font-bold text-lg" style="color: #2F024F">Não se cale, denuncie!</p>
+    </div>
+  </section>
+
+  <footer class="footer-bg" style="background-color: #2F024F;">
+    <div class=" footer max-w-6xl my-0 mx-auto text-gray-50 pt-16 pb-16">
+      <div class="flex justify-between mb-24">
+        <a class="text-4xl font-bold leading-5" href=" ./index.html">Viva Ela</a>
+        <div class=" footer-contato ">
+          <h4 class="font-bold text-xl mb-6 ">Contato</h4>
+          <ul class="text-base leading-loose mb-6">
+            <li>(84) 99999-9999</li>
+            <li>contato@email.com</li>
+            <li>Rua XXX, 20 - YYY</li>
+            <li>Parnamirim - RN</li>
+          </ul>
+          <div class="footer-redes flex gap-4">
+            <a class="w-8 h-8" href=""><img src="./imgs/instagram 1.svg" alt="Ícone do Instagram"></a>
+            <a class="w-8 h-8"> <img src="./imgs/facebook 1.svg" alt="Ícone do Facebook"></a>
+            <a class="w-8 h-8" href=""><img src="./imgs/whatsapp 1.svg" alt="Ícone do Whatsapp"></a>
+          </div>
+        </div>
+        <div class="footer-menu">
+          <h4 class="font-bold text-xl mb-6">Informações</h4>
+          <nav>
+            <ul class="text-base leading-loose">
+              <li><a href="">Quem Somos</a></li>
+              <li><a href="">Informativos</a></li>
+              <li><a href="">Tipos de Violência</a></li>
+              <li><a href="">Buscar Ajuda</a></li>
+              <li><a href="">Contato</a></li>
+            </ul>
+          </nav>
+        </div>
+      </div>
+      <p class="text-sm">© 2025 Viva Ela. Todos os direitos reservados.</p>
+    </div>
+  </footer>
+
+</body>
+
+</html>

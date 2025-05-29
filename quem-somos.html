@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Viva Ela | Quem Somos</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Anton&family=Open+Sans:wght@400;600;700&display=swap" rel="stylesheet">
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+
+<style>
+  .foto-sobre-viva-ela::before,
+  .foto-sobre-viva-ela::after {
+    content: '';
+    display: block;
+    position: absolute;
+    width: 100px;
+    height: 100px;
+    background-color: #8C0351;
+    opacity: 80%;
+  }
+
+  .foto-sobre-viva-ela::after {
+    bottom: 100px;
+    right: -100px;
+    border-radius: 0 6px 0 0;
+  }
+
+  .foto-sobre-viva-ela::before {
+    right: 40%;
+    bottom: -100px;
+    border-radius: 0 0 0 6px;
+  }
+
+  .info-sobre-acolher::before,
+  .info-sobre-acolher::after {
+    content: '';
+    display: block;
+    position: absolute;
+    width: 100px;
+    height: 100px;
+    background-color: #2F024F;
+    opacity: 60%;
+  }
+
+  .info-sobre-acolher::after {
+    bottom: 149px;
+    right: -100px;
+    border-radius: 0 6px 0 0;
+  }
+
+  .info-sobre-acolher::before {
+    bottom: -100px;
+    right: 196px;
+    border-radius: 0 0 0 6px;
+  }
+</style>
+
+<body class="bg-gray-50" style="font-family: 'Open Sans', sans-serif;">
+  <header class="header-bg">
+    <div class="header mx-auto my-0 flex max-w-6xl flex-wrap items-center justify-between py-10">
+      <a class="logo text-5xl font-bold" style="color: #540030" href="./index.html">Viva Ela</a>
+      <nav>
+        <ul class="menu flex gap-3 text-lg font-semibold" style="color: #540030">
+          <li class="flex items-center p-2 gap-1 rounded-md cursor-pointer hover:bg-[#ffe0d9]">
+            <a href="">Quem Somos</a>
+            <span><img class="mt-1" src="./imgs/menu-nav-aberto.svg" alt=""></span>
+          </li>
+          <li class="flex items-center p-2 gap-1 rounded-md cursor-pointer hover:bg-[#ffe0d9]">
+            <a class="" href="">Informativos</a>
+            <span><img class="mt-1" src="./imgs/menu-nav-aberto.svg" alt=""></span>
+          </li>
+          <li class="flex items-center p-2 gap-1 rounded-md cursor-pointer hover:bg-[#ffe0d9]">
+            <a class="" href="./tipos-violencia.html">Tipos de Violência</a>
+            <span><img class="mt-1" src="./imgs/menu-nav-aberto.svg" alt=""></span>
+          </li>
+          <li class="flex items-center p-2 gap-1 rounded-md cursor-pointer hover:bg-[#ffe0d9]">
+            <a class="" href="">Buscar Ajuda</a>
+            <span><img class="mt-1" src="./imgs/menu-nav-aberto.svg" alt=""></span>
+          </li>
+          <li class="flex items-center p-2 gap-1 rounded-md cursor-pointer hover:bg-[#ffe0d9]">
+            <a class="" href="./contato.html">Contato</a>
+            <span><img class="mt-1" src="./imgs/menu-nav-aberto.svg" alt=""></span>
+          </li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section id="introducao-quem-somos" class="introducao-quem-somos-bg">
+      <div class="introducao-quem-somos relative w-full">
+        <img class="w-full object-cover h-[550px] " src="./imgs/banner-quem-somos.jpg" alt="">
+        <div class="info-introducao-quem-somos absolute text-center inset-0 flex flex-col items-center justify-center" style="background-color: rgba(47, 2, 79, 0.8)">
+          <h1 class="text-rose-200 uppercase font-bold text-8xl tracking-wider leading-tight mb-2" style="font-family: 'Anton', sans-serif; ">O que é o <span style="color: #FF654B">Viva Ela</span>?</h1>
+          <p class="text-gray-50 text-2xl max-w-2xl">Lorem ipsum dolor sit amet consectetur. Sem felis odio diam aliquam nullam ac diam. Venenatis vulputate. Aliquam in hendrerit urna. Pellentesque sit amet sapien fringilla</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="sobre-viva-ela" class="sobre-viva-ela-bg pt-24 pb-[33rem] bg-gradient-to-b from-[#FFE0D9] to-[#FFEAF0]">
+      <div class="sobre-viva-ela max-w-6xl my-0 mx-auto relative">
+        <div class="foto-sobre-viva-ela w-[640px] relative">
+          <img class="rounded-md w-full" src="./imgs/foto-sobre-viva-ela.jpg" alt="">
+        </div>
+        <div class="info-sobre-viva-ela bg-gray-50 rounded-md w-[48rem] p-14 absolute top-3/4 right-0 ">
+          <h2 class="uppercase text-5xl tracking-wider leading-snug mb-6" style="color: #540030; opacity: 80%; font-family: 'Anton', sans-serif;">Sobre o Viva Ela</h2>
+          <p class="text-gray-900 text-lg mb-5">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut et massa mi. Aliquam in hendrerit urna. Pellentesque sit amet sapien fringilla, mattis ligula consectetur, ultrices mauris. Maecenas vitae mattis tellus. Nullam quis imperdiet augue.</p>
+          <p class="text-gray-900 text-lg mb-5">Vestibulum auctor ornare leo, non suscipit magna interdum eu. Curabitur pellentesque nibh nibh, at maximus ante fermentum sit amet. Pellentesque commodo lacus at sodales sodales.</p>
+          <p class="text-gray-900 text-lg">Quisque sagittis orci ut diam condimentum, vel euismod erat placerat. In iaculis arcu eros, eget tempus orci facilisis id.Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="sobre-acolher" class="sobre-acolher-bg mb-[23rem]" style="box-shadow: inset 0 120px #FFEAF0">
+      <div class="sobre-acolher mb-24 max-w-6xl my-0 mx-auto relative">
+        <div class="info-sobre-acolher bg-[#8C0351] w-[48rem] rounded-md p-14 relative">
+          <h2 class=" uppercase text-5xl tracking-wider leading-snug mb-6 text-rose-200" style="font-family: 'Anton', sans-serif;">Sobre o Acolher</h2>
+          <p class="text-gray-50 text-lg mb-5">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut et massa mi. Aliquam in hendrerit urna. Pellentesque sit amet sapien fringilla, mattis ligula consectetur, ultrices mauris. Maecenas vitae mattis tellus. Nullam quis imperdiet augue.</p>
+          <p class="text-gray-50 text-lg mb-5">Vestibulum auctor ornare leo, non suscipit magna interdum eu. Curabitur pellentesque nibh nibh, at maximus ante fermentum sit amet. Pellentesque commodo lacus at sodales sodales.</p>
+          <p class="text-gray-50 text-lg mb-8">Quisque sagittis orci ut diam condimentum, vel euismod erat placerat. In iaculis arcu eros, eget tempus orci facilisis id.Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+          <a class="text-lg font-bold uppercase tracking-wider text-[#8C0351] rounded-md p-4 inline-block bg-rose-200" href="">Desejo atendimento no Programa Acolher</a>
+        </div>
+        <div class="foto-sobre-acolher absolute top-3/4 right-0 w-[580px]">
+          <img class="rounded-md w-full" src="./imgs/foto-sobre-acolher.jpg" alt="">
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer-bg" style="background-color: #2F024F;">
+    <div class=" footer max-w-6xl my-0 mx-auto text-gray-50 pt-16 pb-16">
+      <div class="flex justify-between mb-24">
+        <a class="text-4xl font-bold leading-5" href=" ./index.html">Viva Ela</a>
+        <div class=" footer-contato ">
+          <h4 class="font-bold text-xl mb-6 ">Contato</h4>
+          <ul class="text-base leading-loose mb-6">
+            <li>(84) 99999-9999</li>
+            <li>contato@email.com</li>
+            <li>Rua XXX, 20 - YYY</li>
+            <li>Parnamirim - RN</li>
+          </ul>
+          <div class="footer-redes flex gap-4">
+            <a class="w-8 h-8" href=""><img src="./imgs/instagram 1.svg" alt="Ícone do Instagram"></a>
+            <a class="w-8 h-8"> <img src="./imgs/facebook 1.svg" alt="Ícone do Facebook"></a>
+            <a class="w-8 h-8" href=""><img src="./imgs/whatsapp 1.svg" alt="Ícone do Whatsapp"></a>
+          </div>
+        </div>
+        <div class="footer-menu">
+          <h4 class="font-bold text-xl mb-6">Informações</h4>
+          <nav>
+            <ul class="text-base leading-loose">
+              <li><a href="">Quem Somos</a></li>
+              <li><a href="">Informativos</a></li>
+              <li><a href="">Tipos de Violência</a></li>
+              <li><a href="">Buscar Ajuda</a></li>
+              <li><a href="">Contato</a></li>
+            </ul>
+          </nav>
+        </div>
+      </div>
+      <p class="text-sm">© 2025 Viva Ela. Todos os direitos reservados.</p>
+    </div>
+  </footer>
+
+</body>
+
+</html>
