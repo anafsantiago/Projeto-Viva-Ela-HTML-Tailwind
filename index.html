@@ -8,15 +8,31 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Anton&family=Open+Sans:wght@400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./css/style.css">
+  <script>document.documentElement.className += " js";</script>
   <script src="https://cdn.tailwindcss.com"></script>
+
 </head>
+
+<style>
+  .js [data-anime="scroll"] {
+    opacity: 0;
+    transform: translate3d(-30px, 0, 0);
+    transition: 0.3s;
+  }
+
+  [data-anime="scroll"].ativo {
+    opacity: 1;
+    transform: translate3d(0, 0, 0);
+  }
+</style>
 
 <body class="bg-gray-50" style="font-family: 'Open Sans', sans-serif;">
 
   <header class="header-bg" id="header">
     <div class="header mx-auto my-0 flex max-w-6xl flex-wrap items-center justify-between py-10">
       <a class="logo text-5xl font-bold" style="color: #540030" href="./index.html">Viva Ela</a>
-      <nav>
+      <nav data-menu="suave">
         <ul class="menu flex gap-3 text-lg font-semibold" style="color: #540030">
           <li class="flex items-center p-2 gap-1 rounded-md cursor-pointer hover:bg-[#ffe0d9]">
             <a href="#quem-somos">Quem Somos</a>
@@ -45,9 +61,9 @@
 
   <main>
     <section id="introducao" class="introducao-bg bg-[#2F024F] mb-24">
-      <div class="introducao max-w-6xl my-0 mx-auto flex justify-between items-center">
-        <div class="introducao-infos ">
-          <h1 class="text-rose-200 uppercase text-7xl tracking-wider leading-tight max-w-md mb-3" style="font-family: 'Anton', sans-serif;">Acolher, proteger e transformar</h1>
+      <div class="introducao max-w-6xl my-0 mx-auto flex justify-between items-center" data-anime="scroll">
+        <div class=" introducao-infos ">
+          <h1 class=" text-rose-200 uppercase text-7xl tracking-wider leading-tight max-w-md mb-3" style="font-family: 'Anton', sans-serif;">Acolher, proteger e transformar</h1>
           <p class="text-gray-200 text-xl max-w-md">Por uma vida livre de violência: acolhendo, orientando e fortalecendo mulheres todos os dias.</p>
         </div>
         <div class="introducao-imagem">
@@ -56,7 +72,7 @@
       </div>
     </section>
 
-    <section id="quem-somos" class="home-quem-somos-bg mb-24">
+    <section id="quem-somos" class="home-quem-somos-bg mb-24" data-anime="scroll">
       <div class="home-quem-somos max-w-6xl my-0 mx-auto">
         <h2 class="uppercase text-5xl tracking-wider leading-snug text-center mb-14" style="color: #540030; opacity: 80%; font-family: 'Anton', sans-serif;">Quem Somos</h2>
         <div class="grid grid-cols-2 gap-8">
@@ -81,7 +97,7 @@
     </section>
 
     <section id="informativos" class="home-informativos-bg mb-24 bg-cover bg-center" style="background-image: linear-gradient(rgba(47,2,79,0.8), rgba(47,2,79,0.8)), url(./imgs/foto-bg-informativos.jpg);">
-      <div class="home-informativos max-w-6xl my-0 mx-auto">
+      <div class="home-informativos max-w-6xl my-0 mx-auto" data-anime="scroll">
         <h2 class=" uppercase text-5xl tracking-wider leading-snug text-center mb-14 pt-24 text-rose-200" style="font-family: 'Anton', sans-serif;">Informativos</h2>
         <div class="home-informativos-item flex gap-8 pb-24">
           <div class="bg-gray-50 rounded-md flex flex-col place-items-center text-center p-14 gap-7">
@@ -106,7 +122,7 @@
       </div>
     </section>
 
-    <section id="tipos-violencia" class="home-tipos-violencia-bg mb-24">
+    <section id="tipos-violencia" class="home-tipos-violencia-bg mb-24" data-anime="scroll">
       <div class="home-tipos-violencia max-w-6xl my-0 mx-auto">
         <h2 class="uppercase text-5xl tracking-wider leading-snug text-center mb-14" style="color: #540030; opacity: 80%; font-family: 'Anton', sans-serif;">Tipos de Violência</h2>
         <div class="flex items-center gap-10">
@@ -141,7 +157,7 @@
     </section>
 
     <section id="localizacao" class="home-localizacao-bg mb-24" style="background-color: #2F024F;">
-      <div class=" home-localizacao max-w-6xl my-0 mx-auto flex py-24">
+      <div class=" home-localizacao max-w-6xl my-0 mx-auto flex py-24" data-anime="scroll">
         <div class="home-localizacao-infos bg-rose-200 rounded-l-md p-14 flex flex-col flex-1">
           <h2 class="text-5xl leading-snug max-w-xs mb-5" style="color: #540030; opacity: 80%; font-family: 'Anton', sans-serif;">Saiba onde procurar ajuda em Parnamirim</h2>
           <p class="text-gray-900 text-lg max-w-md mb-9">Encontre a localização e informações sobre os serviços públicos de Parnamirim que ajudam no combate à violência contra a mulher. Acesse o mapa e encontre o serviço mais próximo de você!</p>
@@ -157,7 +173,7 @@
     </section>
   </main>
 
-  <section class="disque-180-bg mb-24">
+  <section class="disque-180-bg mb-24" data-anime="scroll">
     <div class="disque-180 max-w-6xl my-0 mx-auto flex items-center">
       <div class="disque-180-imagem flex-1">
         <img class="rounded-md" src="./imgs/disque-180.png" alt="Ícone e número de telefone do Disque 180">
@@ -204,6 +220,7 @@
       <p class="text-sm">© 2025 Viva Ela. Todos os direitos reservados.</p>
     </div>
   </footer>
+  <script type="module" src="./js/script.js"></script>
 </body>
 
 </html>

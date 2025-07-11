@@ -8,6 +8,8 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Anton&family=Open+Sans:wght@400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./css/style.css">
+  <script>document.documentElement.className += " js";</script>
   <script src="https://cdn.tailwindcss.com"></script>
 </head>
 
@@ -47,12 +49,12 @@
       <div class="introducao-contato relative w-full">
         <img class="w-full object-cover h-[550px] " src="./imgs/banner-contato.jpg" alt="">
         <div class="info-introducao-contato absolute text-center inset-0 flex flex-col items-center justify-center" style="background-color: rgba(47, 2, 79, 0.8)">
-          <h1 class="text-rose-200 uppercase font-bold text-8xl tracking-wider leading-tight mb-2" style="font-family: 'Anton', sans-serif; ">Fale Conosco</h1>
-          <p class="text-gray-50 text-2xl max-w-2xl">Lorem ipsum dolor sit amet consectetur. Sem felis odio diam aliquam nullam ac diam. Venenatis vulputate. Aliquam in hendrerit urna. Pellentesque sit amet sapien fringilla</p>
+          <h1 class="text-rose-200 uppercase font-bold text-8xl tracking-wider leading-tight mb-2" style="font-family: 'Anton', sans-serif; " data-anime="scroll">Fale Conosco</h1>
+          <p class="text-gray-50 text-2xl max-w-2xl" data-anime="scroll">Lorem ipsum dolor sit amet consectetur. Sem felis odio diam aliquam nullam ac diam. Venenatis vulputate. Aliquam in hendrerit urna. Pellentesque sit amet sapien fringilla</p>
         </div>
       </div>
     </section>
-    <section id="contato" class="contato-bg mb-24">
+    <section id="contato" class="contato-bg mb-24" data-anime="scroll">
       <div class="contato max-w-6xl my-0 mx-auto gap-9 flex">
         <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3968.611138260224!2d-35.2598921!3d-5.910103799999999!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x7b25707740662df%3A0x7cf5525b4bb3589e!2sMaternidade%20Divino%20Amor!5e0!3m2!1spt-BR!2sbr!4v1747508574065!5m2!1spt-BR!2sbr" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
         <div class="text-gray-900 text-lg">
@@ -115,7 +117,7 @@
       <p class="text-sm">© 2025 Viva Ela. Todos os direitos reservados.</p>
     </div>
   </footer>
-
+  <script type="module" src="./js/script.js"></script>
 </body>
 
 </html>

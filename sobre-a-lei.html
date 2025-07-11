@@ -8,6 +8,8 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Anton&family=Open+Sans:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./css/style.css">
+    <script>document.documentElement.className += " js";</script>
     <script src="https://cdn.tailwindcss.com"></script>
 </head>
 <style>
@@ -61,13 +63,13 @@
             <div class="introducao-sobre-a-lei relative w-full">
                 <img class="w-full object-cover h-[550px] " src="./imgs/banner-sobre-a-lei.jpg" alt="">
                 <div class="info-introducao-sobre-a-lei absolute text-center inset-0 flex flex-col items-center justify-center" style="background-color: rgba(47, 2, 79, 0.8)">
-                    <h1 class="text-rose-200 uppercase font-bold text-8xl max-w-5xl tracking-wider leading-tight mb-2" style="font-family: 'Anton', sans-serif; ">O que é a <br> <span class="text-[#FF654B]">Lei Maria da Penha</span>?</h1>
-                    <p class="text-gray-50 text-2xl max-w-2xl">Conheça os seus direitos e como a legislação protege as mulheres contra a violência.</p>
+                    <h1 class="text-rose-200 uppercase font-bold text-8xl max-w-5xl tracking-wider leading-tight mb-2" style="font-family: 'Anton', sans-serif; " data-anime="scroll">O que é a <br> <span class="text-[#FF654B]">Lei Maria da Penha</span>?</h1>
+                    <p class="text-gray-50 text-2xl max-w-2xl" data-anime="scroll">Conheça os seus direitos e como a legislação protege as mulheres contra a violência.</p>
                 </div>
             </div>
         </section>
 
-        <section id="infos-sobre-a-lei" class="infos-sobre-a-lei-bg mb-24">
+        <section id="infos-sobre-a-lei" class="infos-sobre-a-lei-bg mb-24" data-anime="scroll">
             <div class="infos-sobre-a-lei max-w-6xl my-0 mx-auto relative">
                 <p class="text-gray-900 text-lg mb-5">A Lei Maria da Penha (Lei nº 11.340/2006) foi sancionada em 7 de agosto de 2006, como resultado de uma longa luta pelos direitos das mulheres brasileiras. Seu surgimento está diretamente ligado ao caso de Maria da Penha Maia Fernandes, uma farmacêutica cearense que sofreu duas tentativas de feminicídio por parte do marido, em 1983. Na primeira, ele a deixou paraplégica com um tiro nas costas enquanto ela dormia. Meses depois, tentou eletrocutá-la durante o banho.</p>
 
@@ -80,7 +82,7 @@
         </section>
 
         <section id="pontos-da-lei" class="pontos-da-lei-bg mb-24 bg-gradient-to-b from-[#FFE0D9] to-[#FFF0F6]/70">
-            <div class="pontos-da-lei max-w-6xl my-0 mx-auto pt-24 pb-24">
+            <div class="pontos-da-lei max-w-6xl my-0 mx-auto pt-24 pb-24" data-anime="scroll">
                 <h2 class="uppercase text-5xl tracking-wider leading-snug text-center mb-14" style="color: #540030; opacity: 80%; font-family: 'Anton', sans-serif;">Principais Pontos da Lei Maria da Penha</h2>
                 <dl class="perguntas-lista" data-anime="accordion">
                     <div class="border-b border-gray-900">
@@ -151,7 +153,7 @@
         </section>
     </main>
 
-    <section id="voce-sabia" class="voce-sabia-bg mb-24">
+    <section id="voce-sabia" class="voce-sabia-bg mb-24" data-anime="scroll">
         <div class="voce-sabia max-w-6xl my-0 mx-auto">
             <h2 class="uppercase text-5xl tracking-wider leading-snug text-center mb-14" style="color: #540030; opacity: 80%; font-family: 'Anton', sans-serif;">Sabia Que?</h2>
             <div class="flex gap-8 content-center ">
@@ -205,7 +207,7 @@
             <p class="text-sm">© 2025 Viva Ela. Todos os direitos reservados.</p>
         </div>
     </footer>
-
+    <script type="module" src="./js/script.js"></script>
 </body>
 
 </html>

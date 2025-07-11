@@ -8,6 +8,8 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Anton&family=Open+Sans:ital,wght@0,400;0,600;0,700;1,400;1,600;1,700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./css/style.css">
+    <script>document.documentElement.className += " js";</script>
     <script src="https://cdn.tailwindcss.com"></script>
 </head>
 
@@ -64,12 +66,12 @@
         <section id="introducao-tipos-violencia" class="introducao-tipos-violencia relative w-full mb-24">
             <img class="w-full object-cover h-[550px] " src="./imgs/banner-tipos-violencia.jpg" alt="">
             <div class="info-introducao-tipos-violencia absolute text-center inset-0 flex flex-col items-center justify-center" style="background-color: rgba(47, 2, 79, 0.8)">
-                <h1 class="text-rose-200 uppercase font-bold text-8xl max-w-5xl tracking-wider leading-tight mb-2" style="font-family: 'Anton', sans-serif; ">Tipos de <span class="text-[#FF654B]">violência</span></h1>
-                <p class="text-gray-50 text-2xl max-w-3xl">Conheça os tipos de violência contra a mulher. A informação é o primeiro passo para romper o ciclo da violência.</p>
+                <h1 class="text-rose-200 uppercase font-bold text-8xl max-w-5xl tracking-wider leading-tight mb-2" style="font-family: 'Anton', sans-serif;" data-anime="scroll">Tipos de <span class="text-[#FF654B]">violência</span></h1>
+                <p class="text-gray-50 text-2xl max-w-3xl" data-anime="scroll">Conheça os tipos de violência contra a mulher. A informação é o primeiro passo para romper o ciclo da violência.</p>
             </div>
         </section>
 
-        <section id="infos-tipos-violencia" class="infos-tipos-violencia max-w-6xl my-0 mx-auto mb-24 flex items-center justify-between">
+        <section id="infos-tipos-violencia" class="infos-tipos-violencia max-w-6xl my-0 mx-auto mb-24 flex items-center justify-between" data-anime="scroll">
             <div class="texto-tipos-violencia max-w-xl">
                 <p class="text-gray-900 text-lg mb-5">A <a href="./sobre-a-lei.html" class="text-[#8C0351] underline font-bold">Lei Maria da Penha</a>, por meio do artigo 7º, reconhece que a violência contra a mulher não é apenas física, mas também psicológica, sexual, patrimonial e moral, compreendendo essas cinco categorias de violência como formas de agressão que comprometem a integridade, liberdade e dignidade das mulheres em seus lares, relacionamentos afetivos ou em qualquer contexto onde haja vínculos de afeto, convivência ou dependência.</p>
 
@@ -83,7 +85,7 @@
         </section>
 
         <section id="descricao-tipos-violencia-container" class="descricao-tipos-violencia-container-bg bg-gradient-to-b from-[#FFE0D9] to-[#FFF0F6]/70">
-            <div class="descricao-tipos-violencia-container max-w-6xl my-0 mx-auto pt-24 pb-24 flex">
+            <div class="descricao-tipos-violencia-container max-w-6xl my-0 mx-auto pt-24 pb-24 flex" data-anime="scroll">
                 <ul class="descricao-tipos-violencia-select bg-[#2F024F]/60 rounded-tl-md rounded-bl-md flex-1 p-8 max-w-sm">
                     <li class="bg-[#FFE0D9] hover:bg-gray-50 rounded-md p-6 text-xl text-[#404040] font-bold text-center mb-5 cursor-pointer">Violência Física</li>
                     <li class="bg-[#FFE0D9] hover:bg-gray-50 rounded-md p-6 text-xl text-[#404040] font-bold text-center mb-5 cursor-pointer">Violência Psicológica</li>
@@ -176,7 +178,7 @@
             <p class="text-sm">© 2025 Viva Ela. Todos os direitos reservados.</p>
         </div>
     </footer>
-
+    <script type="module" src="./js/script.js"></script>
 </body>
 
 </html>
