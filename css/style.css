@@ -8,3 +8,42 @@
   opacity: 1;
   transform: translate3d(0, 0, 0);
 }
+
+[data-anime="accordion"] dt.ativo {
+  background-color: #8c0351;
+  color: #fdede9;
+}
+
+[data-anime="accordion"]:last-child dt.ativo {
+  border-radius: 0;
+}
+
+[data-anime="accordion"] dt::after {
+  content: url("../imgs/seta-faq-escura.svg");
+}
+
+[data-anime="accordion"] dt.ativo::after {
+  content: url("../imgs/seta-faq-clara.svg");
+}
+
+.js [data-anime="accordion"] dd {
+  display: none;
+}
+
+[data-anime="accordion"] dd.ativo {
+  display: block;
+  animation: slideDown 0.4s ease forwards;
+}
+
+@keyframes slideDown {
+  from {
+    opacity: 0;
+    transform: translateY(-7px);
+    max-height: 0;
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+    max-height: 500px;
+  }
+}
