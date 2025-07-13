@@ -1,8 +1,8 @@
-import ScrollSuave from "./modules/scroll-suave.js";
 import ScrollAnima from "./modules/scroll-anima.js";
-
-const scrollSuave = new ScrollSuave('[data-menu="suave"] a[href^="#"]');
-scrollSuave.init();
+import MenuDropdown from "./modules/menu-dropdown.js";
 
 const scrollAnima = new ScrollAnima('[data-anime="scroll"]');
 scrollAnima.init();
+
+const menuDropdown = new MenuDropdown("[data-dropdown]");
+menuDropdown.init();
