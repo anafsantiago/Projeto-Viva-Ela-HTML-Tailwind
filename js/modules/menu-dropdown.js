@@ -4,7 +4,7 @@ import outsideClick from "./click-outside.js";
 export default class MenuDropdown {
   constructor(dropdownMenus, events) {
     this.dropdownMenus = document.querySelectorAll(dropdownMenus);
-    this.activeClass = "ativo";
+    this.activeClass = "active";
 
     //Define touchstart e click como argumento padrão de events, caso o usuário não defina
     if (events === undefined) {
@@ -18,7 +18,6 @@ export default class MenuDropdown {
 
   //Ativa o dropdownmenu e adiciona a função que observa o clique fora dele.
   activeDropdownMenu(event) {
-    event.preventDefault();
     const element = event.currentTarget;
     element.classList.add(this.activeClass);
     //Quando abre o menu dropdown é o momento de monitorar o clique externo
