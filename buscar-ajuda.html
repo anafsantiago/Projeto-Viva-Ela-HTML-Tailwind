@@ -24,7 +24,29 @@
         top: -32px;
         right: -70px;
     }
+
+    @media (max-width: 1285px) {
+        .div-detalhe::before {
+            width: 28rem;
+            top: -2rem;
+            right: -1rem;
+        }
+    }
+
+    @media (max-width: 767px) {
+        .div-detalhe::before {
+            right: -4rem;
+        }
+    }
+
+    @media (max-width: 450px) {
+        .div-detalhe::before {
+            width: 22rem;
+            right: -1rem;
+        }
+    }
 </style>
+
 
 <body class="bg-gray-50" style="font-family: 'Open Sans', sans-serif;">
     <header class="header-bg">
@@ -58,24 +80,23 @@
 
     <main>
         <section id="introducao-buscar-ajuda" class="introducao-buscar-ajuda relative w-full">
-            <img class="w-full object-cover h-[550px] " src="./imgs/banner-onde-buscar-ajuda.jpg" alt="">
+            <img class="w-full object-cover h-[420px] md:h-[550px]" src="./imgs/banner-onde-buscar-ajuda.jpg" alt="">
             <div class="info-introducao-buscar-ajuda absolute text-center inset-0 flex flex-col items-center justify-center" style="background-color: rgba(47, 2, 79, 0.8)">
-                <h1 class="text-rose-200 uppercase font-bold text-8xl max-w-5xl tracking-wider leading-tight mb-2" style="font-family: 'Anton', sans-serif; " data-anime="scroll">Onde buscar <span class="text-[#FF654B]">ajuda</span>?</h1>
-                <p class="text-gray-50 text-2xl max-w-3xl" data-anime="scroll">A seguir, apresentaremos informações importantes sobre os serviços públicos de combate à violência contra a mulher em Parnamirim.
-                    Saiba qual é o mais indicado para você!</p>
+                <h1 class="text-rose-200 uppercase font-bold text-6xl md:text-7xl lg:text-8xl tracking-wider leading-tight mb-2 md:mb-8 max-w-xs md:max-w-2xl lg:max-w-5xl" style="font-family: 'Anton', sans-serif; " data-anime="scroll">Onde buscar <span class="text-[#FF654B]">ajuda</span>?</h1>
+                <p class="text-gray-50 text-base md:text-xl lg:text-2xl max-w-xs md:max-w-2xl lg:max-w-3xl" data-anime="scroll">A seguir, apresentaremos informações importantes sobre os serviços públicos de combate à violência contra a mulher em Parnamirim. Saiba qual é o mais indicado para você!</p>
             </div>
         </section>
-        <section id="infos-buscar-ajuda" class="infos-buscar-ajuda-bg pt-24 pb-24 mb-24 bg-gradient-to-b from-[#FFE0D9] to-[#FFEAF0]">
-            <div class="infos-buscar-ajuda max-w-6xl my-0 mx-auto" data-anime="scroll">
-                <p class="text-gray-900 text-lg mb-5">A violência contra a mulher é uma grave violação dos direitos humanos e exige uma rede de apoio preparada para oferecer acolhimento, orientação e proteção. No Brasil, o <a href="./sobre-a-lei.html" class="text-[#8C0351] underline font-bold">Sistema Único de Saúde (SUS)</a> disponibiliza serviços gratuitos, sigilosos e humanizados para atender mulheres em situação de violência, com foco no cuidado integral e sem julgamentos.</p>
-                <p class="text-gray-900 text-lg mb-5">Além disso, iniciativas como a <a href="./sobre-a-lei.html" class="text-[#8C0351] underline font-bold">Casa da Mulher Brasileira</a> reúnem, em um só local, atendimento multidisciplinar com apoio jurídico, psicológico, social e de segurança pública, garantindo suporte completo para quem precisa recomeçar com dignidade e segurança.</p>
-                <p class="text-gray-900 text-lg mb-5">O <a href="./sobre-a-lei.html" class="text-[#8C0351] underline font-bold">Disque 180</a> é um canal nacional e gratuito de orientação sobre direitos e serviços disponíveis para as mulheres em situação de violência. Funciona 24 horas por dia, todos os dias da semana, inclusive feriados, e garante anonimato e escuta qualificada.</p>
-                <p class="text-gray-900 text-lg">No município de Parnamirim/RN, existem serviços essenciais que integram a rede de apoio às mulheres, como: a UPA Nova Esperança; o CAPS Parnamirim; o CREAS; a Delegacia da Mulher e a Maternidade Divino Amor. Saiba mais informações sobre eles a seguir:</p>
+        <section id="infos-buscar-ajuda" class="infos-buscar-ajuda-bg pt-16 md:pt-24 pb-16 md:pb-24 mb-16 md:mb-24 bg-gradient-to-b from-[#FFE0D9] to-[#FFEAF0]">
+            <div class="infos-buscar-ajuda text-base my-0 mx-auto max-w-xs md:text-lg md:max-w-2xl lg:max-w-4xl xl:max-w-6xl" data-anime="scroll">
+                <p class="text-gray-900 mb-5">A violência contra a mulher é uma grave violação dos direitos humanos e exige uma rede de apoio preparada para oferecer acolhimento, orientação e proteção. No Brasil, o <a href="./sobre-a-lei.html" class="text-[#8C0351] underline font-bold">Sistema Único de Saúde (SUS)</a> disponibiliza serviços gratuitos, sigilosos e humanizados para atender mulheres em situação de violência, com foco no cuidado integral e sem julgamentos.</p>
+                <p class="text-gray-900 mb-5">Além disso, iniciativas como a <a href="./sobre-a-lei.html" class="text-[#8C0351] underline font-bold">Casa da Mulher Brasileira</a> reúnem, em um só local, atendimento multidisciplinar com apoio jurídico, psicológico, social e de segurança pública, garantindo suporte completo para quem precisa recomeçar com dignidade e segurança.</p>
+                <p class="text-gray-900 mb-5">O <a href="./sobre-a-lei.html" class="text-[#8C0351] underline font-bold">Disque 180</a> é um canal nacional e gratuito de orientação sobre direitos e serviços disponíveis para as mulheres em situação de violência. Funciona 24 horas por dia, todos os dias da semana, inclusive feriados, e garante anonimato e escuta qualificada.</p>
+                <p class="text-gray-900">No município de Parnamirim/RN, existem serviços essenciais que integram a rede de apoio às mulheres, como: a UPA Nova Esperança; o CAPS Parnamirim; o CREAS; a Delegacia da Mulher e a Maternidade Divino Amor. Saiba mais informações sobre eles a seguir:</p>
             </div>
         </section>
-        <section id="servicos-buscar-ajuda" class="servicos-buscar-ajuda max-w-6xl my-0 mx-auto mb-24" data-anime="scroll">
-            <h2 class="uppercase text-5xl tracking-wider leading-snug text-center mb-28" style="color: #540030; opacity: 80%; font-family: 'Anton', sans-serif;">Onde buscar ajuda em Parnamirim?</h2>
-            <div class="grid grid-cols-2 gap-14 justify-items-center">
+        <section id="servicos-buscar-ajuda" class="servicos-buscar-ajuda my-0 mx-auto mb-16 md:mb-24 max-w-xs md:max-w-2xl lg:max-w-4xl xl:max-w-6xl" data-anime="scroll">
+            <h2 class="uppercase text-3xl md:text-5xl tracking-wider leading-snug text-center mb-28" style="color: #540030; opacity: 80%; font-family: 'Anton', sans-serif;">Onde buscar ajuda em Parnamirim?</h2>
+            <div class="grid lg:grid-cols-2 gap-14 justify-items-center">
                 <div class="div-detalhe relative mb-2">
                     <h3 class="text-[#540030] text-lg font-bold mb-5">UPA Nova Esperança</h3>
                     <p class="text-gray-900 text-base mb-8 max-w-sm">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut et massa mi. Aliquam in hendrerit urna. Pellentesque sit amet sapien fringilla, mattis ligula consectetur, ultrices mauris. Maecenas vitae mattis tellus. Nullam quis imperdiet augue.</p>
@@ -198,14 +219,14 @@
                 </div>
             </div>
         </section>
-        <section id="localizacao-buscar-ajuda" class="localizacao-buscar-ajuda-bg max-w-6xl my-0 mx-auto flex gap-7 mt-40 mb-40" data-anime="scroll">
-            <div class="home-localizacao-infos bg-[#8C0351] rounded-md p-14">
-                <h2 class="text-[#FFE0D9] uppercase text-5xl tracking-wider leading-snug mb-8" style="font-family: 'Anton', sans-serif;">Explore o Mapa</h2>
-                <p class="text-gray-50 text-lg max-w-md mb-5">No mapa ao lado, você vai encontrar as localizações dos serviços apresentados nesta plataforma.</p>
-                <p class="text-gray-50 text-lg max-w-md">Vestibulum auctor ornare leo, non suscipit magna interdum eu. Curabitur pellentesque nibh nibh, at maximus ante fermentum sit amet. Pellentesque commodo lacus at sodales sodales.</p>
+        <section id="localizacao-buscar-ajuda" class="localizacao-buscar-ajuda-bg my-0 mx-auto max-w-xs md:max-w-2xl lg:max-w-4xl lg:flex xl:max-w-6xl lg:gap-7 mt-24 mb-24 lg:mt-40 lg:mb-40" data-anime="scroll">
+            <div class="home-localizacao-infos bg-[#8C0351] rounded-md p-10 lg:p-14 mb-8 lg:mb-0">
+                <h2 class="text-[#FFE0D9] uppercase text-4xl lg:text-5xl tracking-wider leading-snug mb-5 lg:mb-8" style="font-family: 'Anton', sans-serif;">Explore o Mapa</h2>
+                <p class="text-gray-50 text-base lg:text-lg lg:max-w-md mb-3 lg:mb-5">No mapa ao lado, você vai encontrar as localizações dos serviços apresentados nesta plataforma.</p>
+                <p class="text-gray-50 text-base lg:text-lg lg:max-w-md">Vestibulum auctor ornare leo, non suscipit magna interdum eu. Curabitur pellentesque nibh nibh, at maximus ante fermentum sit amet. Pellentesque commodo lacus at sodales sodales.</p>
             </div>
             <div class="home-localizacao-mapa">
-                <iframe class="rounded-md" src=" https://www.google.com/maps/d/u/0/embed?mid=1qcw1fdtnxnbDCXV1z_E7d5bzv0f6oP8&ehbc=2E312F&noprof=1" width="650" height="100%"></iframe>
+                <iframe class="rounded-md w-full h-96 xl:w-[650px] lg:h-full" src=" https://www.google.com/maps/d/u/0/embed?mid=1qcw1fdtnxnbDCXV1z_E7d5bzv0f6oP8&ehbc=2E312F&noprof=1" width="650" height="100%"></iframe>
             </div>
         </section>
     </main>
