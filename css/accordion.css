@@ -37,3 +37,10 @@
     max-height: 500px;
   }
 }
+
+@media (max-width: 1280px) {
+  [data-anime="accordion"] dt::after,
+  [data-anime="accordion"] dt.ativo::after {
+    margin-left: 15px;
+  }
+}
