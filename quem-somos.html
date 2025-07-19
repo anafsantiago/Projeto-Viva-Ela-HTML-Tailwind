@@ -67,17 +67,18 @@
 <body class="bg-gray-50" style="font-family: 'Open Sans', sans-serif;">
   <header class="header-bg">
     <div class="header mx-auto my-0 flex max-w-6xl flex-wrap items-center justify-between py-10">
-      <a class="logo text-5xl font-bold" style="color: #540030" href="./index.html">Viva Ela</a>
-      <nav>
-        <ul class="menu flex gap-3 text-lg font-semibold" style="color: #540030">
+      <a class="logo text-4xl md:text-5xl font-bold" style="color: #540030" href="./index.html">Viva Ela</a>
+      <nav class="menu">
+        <button data-menu="button" aria-expanded="false" aria-controls="menu" class="max-w-xs text-sm md:text-base"></button>
+        <ul data-menu="list" id="menu" class="menu flex gap-3 text-lg font-semibold" style="color: #540030">
           <li class="p-2 rounded-md cursor-pointer">
             <a href="#" class="flex items-center gap-1">Quem Somos</a>
           </li>
           <li data-dropdown class="p-2 rounded-md cursor-pointer relative">
             <a href="#" class="flex items-center gap-1">Informativos<span><img class="mt-1" src="./imgs/menu-nav-aberto.svg" alt=""></span></a>
             <ul class="dropdown-menu hidden bg-rose-100 rounded-md absolute top-11 z-50 pt-7 pb-7 pl-8 pr-8 w-72">
-              <li class="p-3 border-b border-solid border-b-[#8c0351] hover:bg-rose-300 rounded-t-md transition-colors duration-500"><a href=" ./sobre-a-lei.html">Sobre a Lei</a></li>
-              <li class="p-3 hover:bg-rose-300 rounded-b-md transition-colors duration-500"><a href="./sobre-a-violencia.html">Sobre a Violência</a></li>
+              <li class="p-3 border-b border-solid border-b-[#8c0351] lg:hover:bg-rose-300 lg:rounded-t-md lg:transition-colors lg:duration-500"><a href="./sobre-a-lei.html">Sobre a Lei</a></li>
+              <li class="p-3 lg:hover:bg-rose-300 lg:rounded-b-md lg:transition-colors lg:duration-500"><a href="./sobre-a-violencia.html">Sobre a Violência</a></li>
             </ul>
           </li>
           <li class="p-2 rounded-md cursor-pointer">
