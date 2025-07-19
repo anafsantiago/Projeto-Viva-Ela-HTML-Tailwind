@@ -22,10 +22,10 @@
     content: "";
     display: inline-block;
     width: 30px;
-    height: 4px;
+    height: 3px;
     border-radius: 6px;
     background-color: #f9fafb;
-    box-shadow: 0 8px #f9fafb, 0 -8px #f9fafb;
+    box-shadow: 0 7px #f9fafb, 0 -7px #f9fafb;
     transition: transform 0.3s;
   }
 
