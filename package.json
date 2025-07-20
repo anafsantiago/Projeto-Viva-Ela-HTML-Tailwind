@@ -1,0 +1,31 @@
+{
+  "name": "projeto-viva-ela-html-tailwind",
+  "version": "1.0.0",
+  "main": "tailwind.config.js",
+  "scripts": {
+    "dev": "cross-env NODE_ENV=development WATCH=true webpack",
+    "build": "cross-env NODE_ENV=production webpack"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/anafsantiago/Projeto-Viva-Ela-HTML-Tailwind.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/anafsantiago/Projeto-Viva-Ela-HTML-Tailwind/issues"
+  },
+  "homepage": "https://github.com/anafsantiago/Projeto-Viva-Ela-HTML-Tailwind#readme",
+  "description": "",
+  "devDependencies": {
+    "@babel/core": "^7.28.0",
+    "@babel/plugin-transform-runtime": "^7.28.0",
+    "@babel/preset-env": "^7.28.0",
+    "babel-loader": "^10.0.0",
+    "@babel/runtime": "^7.27.6",
+    "cross-env": "^7.0.3",
+    "eslint": "^9.31.0",
+    "webpack": "^5.100.2",
+    "webpack-cli": "^6.0.1"
+  }
+}
