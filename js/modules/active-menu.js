@@ -24,12 +24,8 @@ export default class ActiveMenu {
   activeLink() {
     this.links.forEach((link) => {
       link.classList.remove(this.activeClass);
-      const href = link.getAttribute("href").split("./");
-      console.log("URL: " + this.url[1]);
-      console.log("HREF completo " + href);
-      console.log(href[1] === this.url[1]);
-      console.log("HREF " + href[1]);
-      if (href[1] === this.url[1]) {
+      const id = link.getAttribute("id");
+      if (id === this.url[1]) {
         link.classList.add(this.activeClass);
       }
     });
