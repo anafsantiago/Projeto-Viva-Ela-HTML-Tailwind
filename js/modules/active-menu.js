@@ -1,7 +1,7 @@
 export default class ActiveMenu {
   constructor(links, events) {
     this.links = document.querySelectorAll(links);
-    this.url = window.location.pathname.split("/");
+    this.url = window.location.pathname.split("/").pop();
     this.activeClass = "active";
 
     if (events === undefined) {
@@ -24,8 +24,9 @@ export default class ActiveMenu {
   activeLink() {
     this.links.forEach((link) => {
       link.classList.remove(this.activeClass);
-      const id = link.getAttribute("id");
-      if (id === this.url[this.url.length - 1]) {
+      const href = link.getAttribute("href").split("/").pop();
+      //const id = link.getAttribute("id");
+      if (href === this.url) {
         link.classList.add(this.activeClass);
       }
     });
