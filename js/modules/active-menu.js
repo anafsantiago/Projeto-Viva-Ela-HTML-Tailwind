@@ -25,7 +25,7 @@ export default class ActiveMenu {
     this.links.forEach((link) => {
       link.classList.remove(this.activeClass);
       const id = link.getAttribute("id");
-      if (id === this.url[1]) {
+      if (id === this.url[this.url.length - 1]) {
         link.classList.add(this.activeClass);
       }
     });
