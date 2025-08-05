@@ -14,3 +14,10 @@
     transform: translate3d(0, 0, 0);
   }
 }
+
+@media (max-width: 1279px) {
+  [data-dropdown] .dropdown-menu {
+    display: block;
+    animation: show-up 0.3s forwards;
+  }
+}

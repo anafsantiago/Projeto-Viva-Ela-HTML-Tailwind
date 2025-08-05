@@ -1,0 +1,7 @@
+[data-menu="list"] li a:active {
+  color: #ff5638;
+}
+
+[data-menu="list"] li a.active {
+  color: #ff5638;
+}

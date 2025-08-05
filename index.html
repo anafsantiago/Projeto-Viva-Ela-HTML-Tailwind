@@ -11,6 +11,7 @@
   <link rel="stylesheet" href="./css/style.css">
   <script>document.documentElement.className += " js";</script>
   <script src="https://cdn.tailwindcss.com"></script>
+
 </head>
 
 <body class="bg-gray-50" style="font-family: 'Open Sans', sans-serif;">
@@ -19,15 +20,15 @@
       <a class="logo text-4xl md:text-5xl font-bold pl-5 xl:pl-0" style="color: #540030" href="#">Viva Ela</a>
       <nav class="menu pr-5 xl:pr-0">
         <button data-menu="button" aria-expanded="false" aria-controls="menu" class="max-w-xs flex cursor-pointer bg-[#540030] rounded-md items-center text-sm py-5 px-[10px] xl:hidden md:text-base"></button>
-        <ul data-menu="list" id="menu" class="menu flex gap-3 text-lg font-semibold" style="color: #540030">
+        <ul data-menu="list" id="menu" class="menu text-lg font-semibold hidden absolute bg-rose-100 w-[210px] z-50 right-0 p-5 pl-3 rounded-l-md shadow-sm xl:flex xl:gap-3 xl:relative xl:p-0 xl:w-full xl:bg-transparent xl:rounded-l-none xl:shadow-none" style="color: #540030">
           <li class="p-2 rounded-md cursor-pointer">
             <a href="/quem-somos.html" class="flex items-center gap-1">Quem Somos</a>
           </li>
           <li data-dropdown class="p-2 rounded-md cursor-pointer relative">
             <a href="#" class="flex items-center gap-1">Informativos<span><img class="mt-1" src="./imgs/menu-nav-aberto.svg" alt=""></span></a>
-            <ul class="dropdown-menu hidden bg-rose-100 rounded-md absolute top-11 z-50 pt-7 pb-7 pl-8 pr-8 xl:w-72">
-              <li class="p-3 border-b border-solid border-b-[#8c0351] lg:hover:bg-rose-300 lg:rounded-t-md lg:transition-colors lg:duration-500"><a href="/sobre-a-lei.html">Sobre a Lei</a></li>
-              <li class="p-3 lg:hover:bg-rose-300 lg:rounded-b-md lg:transition-colors lg:duration-500"><a href="/sobre-a-violencia.html">Sobre a Violência</a></li>
+            <ul class="dropdown-menu hidden rounded-md static p-1 w-full text-base xl:bg-rose-100 xl:text-lg xl:absolute xl:top-11 xl:z-50 xl:pt-7 xl:pb-7 xl:pl-8 xl:pr-8 xl:w-72">
+              <li class="p-0 pl-5 pt-3 xl:p-3 xl:border-b xl:border-b-[#8c0351] xl:border-solid xl:hover:bg-rose-300 xl:rounded-t-md xl:transition-colors xl:duration-500"><a href="/sobre-a-lei.html">Sobre a Lei</a></li>
+              <li class="p-0 pl-5 pt-3 xl:p-3 xl:hover:bg-rose-300 xl:rounded-b-md xl:transition-colors xl:duration-500"><a href="/sobre-a-violencia.html">Sobre a Violência</a></li>
             </ul>
           </li>
           <li class="p-2 rounded-md cursor-pointer">
@@ -112,7 +113,7 @@
         <h2 class="uppercase text-3xl md:text-5xl tracking-wider leading-snug text-center mb-16" style="color: #540030; opacity: 80%; font-family: 'Anton', sans-serif;">Tipos de Violência</h2>
         <div class="slide-wrapper overflow-hidden">
           <ul class="slide flex hover:will-change-transform">
-            <li class="bg-[#fff1f2] flex items-center justify-center gap-6 shrink-0 w-[80vw] h-[40vh] lg:h-[55vh] max-w-[800px] my-0 mx-5 rounded-md overflow-hidden opacity-[0.8]">
+            <li class="bg-[#fff1f2] flex items-center justify-center gap-6 shrink-0 w-[80vw] h-[40vh] xl:h-[55vh] max-w-[800px] my-0 mx-5 rounded-md overflow-hidden opacity-[0.8]">
               <div class="home-tipos-violencia-numero">
                 <span class="text-9xl text-rose-200 lg:text-[14rem] leading-none" style="font-family: 'Anton', sans-serif;">1</span>
               </div>
@@ -121,7 +122,7 @@
                 <p class="text-base md:text-lg text-gray-900 mt-1">Entendida como qualquer conduta que ofenda a integridade ou saúde corporal da mulher.</p>
               </div>
             </li>
-            <li class="bg-[#fff1f2] flex items-center justify-center gap-6 shrink-0 w-[80vw] h-[40vh] lg:h-[55vh] max-w-[800px] my-0 mx-5 rounded-md overflow-hidden opacity-[0.8]">
+            <li class="bg-[#fff1f2] flex items-center justify-center gap-6 shrink-0 w-[80vw] h-[40vh] xl:h-[55vh] max-w-[800px] my-0 mx-5 rounded-md overflow-hidden opacity-[0.8]">
               <div class="home-tipos-violencia-numero ">
                 <span class="text-9xl text-rose-200 lg:text-[14rem] leading-none" style="font-family: 'Anton', sans-serif;">2</span>
               </div>
@@ -130,7 +131,7 @@
                 <p class="text-base md:text-lg text-gray-900 mt-1">Qualquer conduta que cause dano emocional, afete a autoestima, prejudique o desenvolvimento ou busque controlar a mulher.</p>
               </div>
             </li>
-            <li class="bg-[#fff1f2] flex items-center justify-center gap-6 shrink-0 w-[80vw] h-[40vh] lg:h-[55vh] max-w-[800px] my-0 mx-5 rounded-md overflow-hidden opacity-[0.8]">
+            <li class="bg-[#fff1f2] flex items-center justify-center gap-6 shrink-0 w-[80vw] h-[40vh] xl:h-[55vh] max-w-[800px] my-0 mx-5 rounded-md overflow-hidden opacity-[0.8]">
               <div class="home-tipos-violencia-numero">
                 <span class="text-9xl text-rose-200 lg:text-[14rem] leading-none" style="font-family: 'Anton', sans-serif;">3</span>
               </div>
@@ -139,7 +140,7 @@
                 <p class="text-base md:text-lg text-gray-900 mt-1">Entendida como qualquer conduta que ofenda a integridade ou saúde corporal da mulher.</p>
               </div>
             </li>
-            <li class="bg-[#fff1f2] flex items-center justify-center gap-6 shrink-0 w-[80vw] h-[40vh] lg:h-[55vh] max-w-[800px] my-0 mx-5 rounded-md overflow-hidden opacity-[0.8]">
+            <li class="bg-[#fff1f2] flex items-center justify-center gap-6 shrink-0 w-[80vw] h-[40vh] xl:h-[55vh] max-w-[800px] my-0 mx-5 rounded-md overflow-hidden opacity-[0.8]">
               <div class="home-tipos-violencia-numero">
                 <span class="text-9xl text-rose-200 lg:text-[14rem] leading-none" style="font-family: 'Anton', sans-serif;">4</span>
               </div>
@@ -148,7 +149,7 @@
                 <p class="text-base md:text-lg text-gray-900 mt-1">Entendida como qualquer conduta que ofenda a integridade ou saúde corporal da mulher.</p>
               </div>
             </li>
-            <li class="bg-[#fff1f2] flex items-center justify-center gap-6 shrink-0 w-[80vw] h-[40vh] lg:h-[55vh] max-w-[800px] my-0 mx-5 rounded-md overflow-hidden opacity-[0.8]">
+            <li class="bg-[#fff1f2] flex items-center justify-center gap-6 shrink-0 w-[80vw] h-[40vh] xl:h-[55vh] max-w-[800px] my-0 mx-5 rounded-md overflow-hidden opacity-[0.8]">
               <div class="home-tipos-violencia-numero">
                 <span class="text-9xl text-rose-200 lg:text-[14rem] leading-none" style="font-family: 'Anton', sans-serif;">5</span>
               </div>
@@ -159,7 +160,7 @@
             </li>
           </ul>
         </div>
-        <div class="arrow-nav flex justify-around my-5 mx-0">
+        <div class="arrow-nav hidden md:flex justify-around my-5 mx-0">
           <button class="prev cursor-pointer border-none rounded w-[40px] h-[40px]"></button>
           <button class="next cursor-pointer border-none rounded w-[40px] h-[40px]"></button>
         </div>
