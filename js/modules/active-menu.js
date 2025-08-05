@@ -25,7 +25,6 @@ export default class ActiveMenu {
     this.links.forEach((link) => {
       link.classList.remove(this.activeClass);
       const href = link.getAttribute("href").split("/").pop();
-      //const id = link.getAttribute("id");
       if (href === this.url) {
         link.classList.add(this.activeClass);
       }
