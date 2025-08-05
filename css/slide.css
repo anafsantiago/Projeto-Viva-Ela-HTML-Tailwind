@@ -1,0 +1,40 @@
+.slide li {
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.4);
+  transform: scale(0.8);
+  transition: 0.3s;
+}
+
+.slide li.active {
+  opacity: 1;
+  transform: scale(1);
+}
+
+[data-control="slide"] {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+[data-control="slide"] li a {
+  display: block;
+  width: 12px;
+  height: 12px;
+  background-color: #540030;
+  border-radius: 50%;
+  margin: 5px;
+  overflow: hidden;
+  text-indent: -999px; /*Mover o texto para que os números não apareçam*/
+}
+
+[data-control="slide"] li.active a,
+[data-control="slide"] li a:hover {
+  background-color: #ff929d;
+}
+
+.arrow-nav button {
+  background: #540030 url("../imgs/arrow.svg") center center no-repeat;
+}
+
+.arrow-nav button.prev {
+  transform: rotate(-180deg);
+}
